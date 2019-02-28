@@ -1,0 +1,53 @@
+.header {
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+
+.head {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.head1 {
+    background: url('img/up/design.png') no-repeat center;
+}
+.head2 {
+    background: url('img/up/internet_add.png') no-repeat center;
+}
+.head3 {
+    background: url('img/up/seo.png') no-repeat center;
+}
+.head4 {
+    background: url('img/up/sites.png') no-repeat center;
+}
+
+.menu {
+    width: 100%;
+    height: 100px;
+    background: red;
+    display: flex;
+}
+
+.m {
+    width: 25%;
+    height: 100%;
+}
+
+.op1 {
+    opacity: 1;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.op0 {
+    opacity: 0;
+    transition: 2s;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
+}

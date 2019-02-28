@@ -5,10 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Main</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
 
-    
+    <div class="header">
+        <div class="head head1"></div>
+        <div class="head head2"></div>
+        <div class="head head3"></div>
+        <div class="head head4"></div>
+    </div>
+    <div class="menu">
+        <div class="m m1">1</div>
+        <div class="m m2">2</div>
+        <div class="m m3">3</div>
+        <div class="m m4">4</div>
+    </div>
+
+
+    <script>
+        
+        let b1 = document.querySelector('.m1');
+        let b2 = document.querySelector('.m2');
+        let b3 = document.querySelector('.m3');
+        let b4 = document.querySelector('.m4');
+
+        let h1 = document.querySelector('.head1');
+        let h2 = document.querySelector('.head2');
+        let h3 = document.querySelector('.head3');
+        let h4 = document.querySelector('.head4');
+
+        b1.addEventListener('mouseenter', function(){
+            h1.classList.remove('op0');
+            h1.classList.add('op1');
+            h2.classList.add('op0');
+            h3.classList.add('op0');
+            h4.classList.add('op0');
+        });
+        b2.addEventListener('mouseenter', function(){
+            h1.classList.add('op0');
+            h2.classList.remove('op0');
+            h2.classList.add('op1');
+            h3.classList.add('op0');
+            h4.classList.add('op0');
+        });
+        b3.addEventListener('mouseenter', function(){
+            h1.classList.add('op0');
+            h2.classList.add('op0');
+            h3.classList.remove('op0');
+            h3.classList.add('op1');
+            h4.classList.add('op0');
+        });
+        b4.addEventListener('mouseenter', function(){
+            h1.classList.add('op0');
+            h2.classList.add('op0');
+            h3.classList.add('op0');
+            h4.classList.remove('op0');
+            h4.classList.add('op1');
+        });
+
+    </script>
     
 </body>
 </html>
