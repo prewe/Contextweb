@@ -8,6 +8,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+
 /* MOBILE-MENU */
 
 .mobile-menu {
@@ -159,8 +160,8 @@ input {
 .header {
     position: relative;
     width: 100%;
-    min-width: 1000px;
-    height: 600px;
+    /*min-width: 1000px;*/
+    height: 550px;
     z-index: 10;
 }
 
@@ -180,6 +181,8 @@ input {
     /* margin-left: 65px; */
     font-size: 40px;
     font-weight: 900;
+    /*margin-top: 400px;*/
+
 }
 
 .head p {
@@ -192,15 +195,16 @@ input {
 .head {
     position: absolute;
     display: flex;
-    align-items: center;
-    width: 100%;
+    align-items: center;    
     height: 100%;
     padding: 0;
 }
-.head1 {
-    background: #7B15AD url('img/up/internet_add.png') no-repeat 80%;
-    
+
+.head1 {    
+    background: #7B15AD url('img/up/internet_add.png') no-repeat 80%; 
 }
+
+
 .head2 {
     background: #F56B57 url('img/up/seo.png') no-repeat 80%;
 }
@@ -275,23 +279,79 @@ input {
 }
 
 
+    /* xl-размер (>=1200px) */
+    /* CSS для >=1200px */
+     
+    /* lg-размер (<=1199px) */
+    @media (max-width: 1199px) {
+      /* CSS для ширины от 992px до 1199px */
+    }
+     
+    /* md-размер (<=991px) */
+    @media (max-width: 991px) {
+      /* CSS для ширины от 768px до 991px */
 
-
-
-
-@media screen and (max-width: 993px) {
-    
+    .header {height: 350px;}
     .head1 { animation-name: fadeImg-1; }
     .head2 { animation-name: fadeImg-2; }
     .head3 { animation-name: fadeImg-3; }
     .head4 { animation-name: fadeImg-4; }
-    .head { animation-duration: 16s; animation-iteration-count: infinite; } 
-}
-@media screen and (max-width: 1540px) {
-    
-    
-}
 
+    .head {
+         background-size:  100% auto;    
+         animation-duration: 46s;
+         animation-iteration-count: infinite;
+         height: 60%;
+       } 
+    
+    .head1 span {
+        position: absolute;
+        top: 230px;
+        color:#7B15AD;
+        line-height: 2.6rem;
+    }
+
+    .head2 span { 
+        position: absolute;
+        top: 230px;
+        color: #F56B57;
+        line-height: 2.6rem;        
+    }
+     
+
+    .head2 p { 
+        position: absolute;
+        top: 315px;
+        color: #F56B57;
+    }   
+
+    .head3 span { 
+        position: absolute;
+        top: 230px;
+        color: #FFCC00;
+        line-height: 2.6rem;
+    }
+
+    .head4 span { 
+        position: absolute;
+        top: 230px;
+        color: #67C3E1;
+        line-height: 2.6rem;
+    }    
+
+
+    }
+     
+    /* sm-размер (<=768px) */
+    @media (max-width: 767px) { 
+      /* CSS для ширины от 576px до 767px */
+    }
+     
+    /* xs-размер (<=575px) */
+    @media (max-width: 575px) {
+      /* CSS для ширины до 575px (включительно) */
+      .head span {font-size: 34px;}
+    }
 
 
 /* KEYFRAMES */
