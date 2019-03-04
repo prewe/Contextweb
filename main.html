@@ -5,30 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Main</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
 
-    <div class="header">
-        <div class="head head1"></div>
-        <div class="head head2"></div>
-        <div class="head head3"></div>
-        <div class="head head4"></div>
-    </div>
-    <div class="menu">
-        <div class="m m1">1</div>
-        <div class="m m2">2</div>
-        <div class="m m3">3</div>
-        <div class="m m4">4</div>
-    </div>
+    <nav class="mobile-menu d-block d-lg-none">
+        <input type="checkbox" id="check-menu">
+        <label for="check-menu"></label>
+        <div class="mobile-menu__burger"><span></span></div>
+        <div class="mobile-menu__logo"><img src="img/logo.png" alt="logo" height="80%"></div>
+        <ul class="mobile-menu__block">
+            <li class="mobile-menu__btn">Реклама в интернете</li>
+            <li class="mobile-menu__btn">Маркетинг в соц.сетях</li>
+            <li class="mobile-menu__btn">Адаптивные сайты</li>
+            <li class="mobile-menu__btn">Диджитал дизайн</li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="header container-fluid">
+            <div class="row">
+                <div class="header__logo container-fluid d-none d-lg-block"><img src="img/logo.png" alt="logo"></div>
+        
+                <div class="head head1 col"><div class="container"><span>Реклама<br> в интернете</span></div></div>
+                <div class="head head2 col op0"><div class="container"><span>Продвижение<br> в соцсетях</span><p>Instagram, Вконтакте и т.д.</p></div></div>
+                <div class="head head3 col op0"><div class="container"><span>Адаптивные<br> сайты</span></div></div>
+                <div class="head head4 col op0"><div class="container"><span>Диджитал<br> дизайн</span></div></div>
+            </div>
+        </div>
+        <div class="header__menu container d-none d-lg-block">
+            <div class="row">
+                <div class="header__menu-item item1 col"><a href="#">Реклама в<br> интернете</a></div>
+                <div class="header__menu-item item2 col"><a href="#">Маркетинг<br> в соц.сетях</a></div>
+                <div class="header__menu-item item3 col"><a href="#">Адаптивные<br> сайты</a></div>
+                <div class="header__menu-item item4 col"><a href="#">Диджитал<br> дизайн</a></div>
+            </div>
+        </div>
+        
+    </header>
 
 
+    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
     <script>
         
-        let b1 = document.querySelector('.m1');
-        let b2 = document.querySelector('.m2');
-        let b3 = document.querySelector('.m3');
-        let b4 = document.querySelector('.m4');
+        let b1 = document.querySelector('.item1');
+        let b2 = document.querySelector('.item2');
+        let b3 = document.querySelector('.item3');
+        let b4 = document.querySelector('.item4');
 
         let h1 = document.querySelector('.head1');
         let h2 = document.querySelector('.head2');
