@@ -159,6 +159,7 @@ input {
 .header {
     position: relative;
     width: 100%;
+    min-width: 1000px;
     height: 600px;
     z-index: 10;
 }
@@ -168,7 +169,7 @@ input {
 }
 
 .header__logo img {
-    margin-left: 65px;
+    /* margin-left: 65px; */
     margin-top: 50px;
 }
 
@@ -176,15 +177,14 @@ input {
     display: block;
     color: white;
     text-transform: uppercase;
-    margin-left: 65px;
-    /* margin-top: 200px; */
+    /* margin-left: 65px; */
     font-size: 40px;
     font-weight: 900;
 }
 
 .head p {
     text-transform: uppercase;
-    margin-left: 65px;
+    /* margin-left: 65px; */
     font-size: 16px;
     color: white;
 }
@@ -195,18 +195,20 @@ input {
     align-items: center;
     width: 100%;
     height: 100%;
+    padding: 0;
 }
 .head1 {
-    background: #7B15AD url('img/up/internet_add.png') no-repeat 140%;
+    background: #7B15AD url('img/up/internet_add.png') no-repeat 80%;
+    
 }
 .head2 {
-    background: #F56B57 url('img/up/seo.png') no-repeat 140%;
+    background: #F56B57 url('img/up/seo.png') no-repeat 80%;
 }
 .head3 {
-    background: #FFCC00 url('img/up/sites.png') no-repeat 140%;
+    background: #FFCC00 url('img/up/sites.png') no-repeat 80%;
 }
 .head4 {
-    background: #67C3E1 url('img/up/design.png') no-repeat 140%;
+    background: #67C3E1 url('img/up/design.png') no-repeat 80%;
 }
 
 
@@ -283,9 +285,13 @@ input {
     .head2 { animation-name: fadeImg-2; }
     .head3 { animation-name: fadeImg-3; }
     .head4 { animation-name: fadeImg-4; }
-    .head { animation-duration: 16s; animation-iteration-count: infinite; }
+    .head { animation-duration: 16s; animation-iteration-count: infinite; } 
+}
+@media screen and (max-width: 1540px) {
+    
     
 }
+
 
 
 /* KEYFRAMES */
