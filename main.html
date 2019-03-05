@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Main</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
@@ -21,6 +22,7 @@
             <li class="mobile-menu__btn">Маркетинг в соц.сетях</li>
             <li class="mobile-menu__btn">Адаптивные сайты</li>
             <li class="mobile-menu__btn">Диджитал дизайн</li>
+            <li class="mobile-menu__btn">Тел.: 8-800-555-35-35</li>
         </ul>
     </nav>
 
@@ -28,7 +30,6 @@
         <div class="header container-fluid">
             <div class="row">
                 <div class="header__logo container d-none d-lg-block"><img src="img/logo.png" alt="logo"></div>
-        
                 <div class="head head1 col"><div class="container"><span>Реклама<br> в интернете</span></div></div>
                 <div class="head head2 col op0"><div class="container"><span>Продвижение<br> в соцсетях</span><p>Instagram, Вконтакте и т.д.</p></div></div>
                 <div class="head head3 col op0"><div class="container"><span>Адаптивные<br> сайты</span></div></div>
@@ -43,14 +44,30 @@
                 <div class="header__menu-item item4 col"><a href="#">Диджитал<br> дизайн</a></div>
             </div>
         </div>
-        
     </header>
+
+    <main class="our-works">
+        <div class="container">
+            <div class="our-works__header text-center mt-5"><span>Наши<span class="gradient"> Работы</span></span></div>
+            <div class="mac text-center">
+                 <div class="our-works__carousel position-absolute">
+                    <div class="carousel__item">0</div>
+                    <div class="carousel__item">1</div>
+                    <div class="carousel__item">2</div>
+                    <div class="carousel__item">3</div>
+                    <div class="carousel__item">4</div>
+                 </div>
+                <img src="img/mac.png" class="img-fluid" alt="mac">
+            </div> 
+        </div>
+    </main>
 
 
     
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
     <script>
@@ -92,6 +109,15 @@
             h3.classList.add('op0');
             h4.classList.remove('op0');
             h4.classList.add('op1');
+        });
+
+
+        $('.our-works__carousel').slick({
+            arrows: false,
+            centerMode: true,
+            autoplay: true,
+            slidesToShow: 3,
+            slidesToScroll: 1
         });
 
     </script>
