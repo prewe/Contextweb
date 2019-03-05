@@ -1,12 +1,16 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+}
 body {
     font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden;
+    
 }
 
 
@@ -27,7 +31,8 @@ body {
     text-align: center;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     z-index: 500;
     line-height: 50px;
 }
@@ -61,7 +66,10 @@ input {
     position: absolute;
     top: 50%;
     left: 30%;
+    -webkit-transition: 1s background-color, 1s -webkit-transform;
+    transition: 1s background-color, 1s -webkit-transform;
     transition: 1s transform, 1s background-color;
+    transition: 1s transform, 1s background-color, 1s -webkit-transform;
     -webkit-transition: 1s transform, 1s background-color;
     -moz-transition: 1s transform, 1s background-color;
     -ms-transition: 1s transform, 1s background-color;
@@ -75,7 +83,10 @@ input {
     background: white;
     z-index: 100;
     position: absolute;
+    -webkit-transition: 1s background-color, 1s -webkit-transform;
+    transition: 1s background-color, 1s -webkit-transform;
     transition: 1s transform, 1s background-color;
+    transition: 1s transform, 1s background-color, 1s -webkit-transform;
 }
   
 .mobile-menu__burger span::before {
@@ -103,7 +114,10 @@ input {
 }
 #check-menu:checked ~ .mobile-menu__burger span::before,
 #check-menu:checked ~ .mobile-menu__burger span::after {
+    -webkit-transition: 0.5s -webkit-transform;
+    transition: 0.5s -webkit-transform;
     transition: 0.5s transform;
+    transition: 0.5s transform, 0.5s -webkit-transform;
     -webkit-transition: 0.5s transform;
     -moz-transition: 0.5s transform;
     -ms-transition: 0.5s transform;
@@ -133,6 +147,7 @@ input {
     position: absolute;
     top: -300px;
     z-index: 20;
+    -webkit-transition: 1s;
     transition: 1s;
 }
 
@@ -148,7 +163,9 @@ input {
 }
 
 #check-menu:checked ~ .mobile-menu__block {
-    transform: translateY(350px);
+    -webkit-transform: translateY(350px);
+            transform: translateY(350px);
+    -webkit-transition: 1s;
     transition: 1s;
 }
 
@@ -188,8 +205,12 @@ input {
 
 .head {
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;    
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;    
     height: 100%;
     padding: 0;
 }
@@ -223,9 +244,15 @@ input {
     padding: 0;
     width: 215px;
     height: 175px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .header__menu-item a {
@@ -310,7 +337,8 @@ input {
     background: yellow;
     border-radius: 5px;
     overflow: hidden;
-    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
     
 }
 
@@ -323,7 +351,8 @@ input {
 }
 
 .slick-current {
-    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
 }
 
 
@@ -359,14 +388,16 @@ input {
 @media (max-width: 991px) {
   /* CSS для ширины от 768px до 991px */
     .header {height: 350px;}
-    .head1 { animation-name: fadeImg-1; }
-    .head2 { animation-name: fadeImg-2; }
-    .head3 { animation-name: fadeImg-3; }
-    .head4 { animation-name: fadeImg-4; }
+    .head1 { -webkit-animation-name: fadeImg-1; animation-name: fadeImg-1; }
+    .head2 { -webkit-animation-name: fadeImg-2; animation-name: fadeImg-2; }
+    .head3 { -webkit-animation-name: fadeImg-3; animation-name: fadeImg-3; }
+    .head4 { -webkit-animation-name: fadeImg-4; animation-name: fadeImg-4; }
     .head {
         background-size:  42% auto;    
-        animation-duration: 16s;
-        animation-iteration-count: infinite;
+        -webkit-animation-duration: 16s;    
+                animation-duration: 16s;
+        -webkit-animation-iteration-count: infinite;
+                animation-iteration-count: infinite;
         height: 60%;
     } 
     .our-works__carousel {
@@ -444,12 +475,30 @@ input {
 /* KEYFRAMES */
 
 
+@-webkit-keyframes fadeImg-1 {
+    from  { opacity:1; }
+    16%   { opacity:1; }
+    25%   { opacity:0; }
+    91%   { opacity:0; }
+    to    { opacity:1; }
+}
+
+
 @keyframes fadeImg-1 {
     from  { opacity:1; }
     16%   { opacity:1; }
     25%   { opacity:0; }
     91%   { opacity:0; }
     to    { opacity:1; }
+}
+  
+@-webkit-keyframes fadeImg-2 {
+    from  { opacity:0; }
+    16%   { opacity:0; }
+    25%   { opacity:1; }
+    41%   { opacity:1; }
+    50%   { opacity:0; }
+    to    { opacity:0; }
 }
   
 @keyframes fadeImg-2 {
@@ -461,12 +510,29 @@ input {
     to    { opacity:0; }
 }
   
+@-webkit-keyframes fadeImg-3 {
+    from  { opacity:0; }
+    41%   { opacity:0; }
+    50%   { opacity:1; }
+    66%   { opacity:1; }
+    75%   { opacity:0; }
+    to    { opacity:0; }
+}
+  
 @keyframes fadeImg-3 {
     from  { opacity:0; }
     41%   { opacity:0; }
     50%   { opacity:1; }
     66%   { opacity:1; }
     75%   { opacity:0; }
+    to    { opacity:0; }
+}
+  
+@-webkit-keyframes fadeImg-4 {
+    from  { opacity:0; }
+    66%   { opacity:0; }
+    75%   { opacity:1; }
+    91%   { opacity:1; }
     to    { opacity:0; }
 }
   
