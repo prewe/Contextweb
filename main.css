@@ -336,108 +336,109 @@ input {
 
 
 
-    /* xl-размер (>=1200px) */
-    @media (min-width: 1200px) {
-        .our-works__carousel {
-            width: 227%;
-            left: -63.5%;
-        }
+/* xl-размер (>=1200px) */
+@media (min-width: 1200px) {
+    .our-works__carousel {
+        width: 227%;
+        left: -63.5%;
     }
-    /* CSS для >=1200px */
+}
+/* CSS для >=1200px */
      
-    /* lg-размер (<=1199px) */
-    @media (max-width: 1199px) {
-      /* CSS для ширины от 992px до 1199px */
-    
-        .our-works__carousel {
-            width: 255%;
-            left: -77.5%;
-        }
+/* lg-размер (<=1199px) */
+@media (max-width: 1199px) {
+  /* CSS для ширины от 992px до 1199px */
 
+    .our-works__carousel {
+        width: 255%;
+        left: -77.5%;
     }
-     
-    /* md-размер (<=991px) */
-    @media (max-width: 991px) {
-      /* CSS для ширины от 768px до 991px */
-
-        .header {height: 350px;}
-        .head1 { animation-name: fadeImg-1; }
-        .head2 { animation-name: fadeImg-2; }
-        .head3 { animation-name: fadeImg-3; }
-        .head4 { animation-name: fadeImg-4; }
-
-        .head {
-            background-size:  42% auto;    
-            animation-duration: 16s;
-            animation-iteration-count: infinite;
-            height: 60%;
-        } 
-
-        .our-works__carousel {
-            width: 260%;
-            left: -80%;
-        }
-    
+}
+ 
+/* md-размер (<=991px) */
+@media (max-width: 991px) {
+  /* CSS для ширины от 768px до 991px */
+    .header {height: 350px;}
+    .head1 { animation-name: fadeImg-1; }
+    .head2 { animation-name: fadeImg-2; }
+    .head3 { animation-name: fadeImg-3; }
+    .head4 { animation-name: fadeImg-4; }
+    .head {
+        background-size:  42% auto;    
+        animation-duration: 16s;
+        animation-iteration-count: infinite;
+        height: 60%;
+    } 
+    .our-works__carousel {
+        width: 260%;
+        left: -80%;
     }
-     
-    /* sm-размер (<=768px) */
-    @media (max-width: 767px) { 
-      /* CSS для ширины от 576px до 767px */
-        .head { background-size:  80% auto; }
-        .head2 { background-size:  70% auto; }
-        .head1 span {
-            position: absolute;
-            top: 230px;
-            color:#7B15AD;
-            line-height: 2.6rem;
-        }
 
-    
-        .head2 span { 
-            position: absolute;
-            top: 230px;
-            color: #F56B57;
-            line-height: 2.6rem;        
-        }
-         
-    
-        .head2 p { 
-            position: absolute;
-            top: 315px;
-            color: #F56B57;
-        }   
-    
-        .head3 span { 
-            position: absolute;
-            top: 230px;
-            color: #FFCC00;
-            line-height: 2.6rem;
-        }
-    
-        .head4 span { 
-            position: absolute;
-            top: 230px;
-            color: #67C3E1;
-            line-height: 2.6rem;
-        } 
+}
+ 
+/* sm-размер (<=768px) */
+@media (max-width: 767px) { 
+  /* CSS для ширины от 576px до 767px */
+    .head { background-size:  80% auto; }
+    .head2 { background-size:  70% auto; }
+    .head1 span {
+        position: absolute;
+        top: 230px;
+        color:#7B15AD;
+        line-height: 2.6rem;
+    }
 
-        .our-works__carousel {
-            width: 270%;
-            left: -85%;
-        }
-
+    .head2 span { 
+        position: absolute;
+        top: 230px;
+        color: #F56B57;
+        line-height: 2.6rem;        
     }
      
-    /* xs-размер (<=575px) */
-    @media (max-width: 575px) {
-      /* CSS для ширины до 575px (включительно) */
-        .head span {font-size: 34px;}
-        .head { background-size:  110% auto; }
-        .our-works__carousel {
-            width: 280%;
-            left: -90%;
-        }
+
+    .head2 p { 
+        position: absolute;
+        top: 315px;
+        color: #F56B57;
+    }   
+
+    .head3 span { 
+        position: absolute;
+        top: 230px;
+        color: #FFCC00;
+        line-height: 2.6rem;
     }
+
+    .head4 span { 
+        position: absolute;
+        top: 230px;
+        color: #67C3E1;
+        line-height: 2.6rem;
+    } 
+    .our-works__carousel {
+        width: 270%;
+        left: -85%;
+    }
+}
+ 
+/* xs-размер (<=575px) */
+@media (max-width: 575px) {
+  /* CSS для ширины до 575px (включительно) */
+    .head span {font-size: 34px;}
+    .head { background-size:  110% auto; }
+    .our-works__carousel {
+        width: 280%;
+        left: -90%;
+    }
+}
+
+@media (max-width: 420px) {
+    /* CSS для ширины до 420px (включительно) */
+      .our-works__carousel {
+          width: 296%;
+          left: -98%;
+      }
+}
 
 
 /* KEYFRAMES */
