@@ -318,9 +318,9 @@ input {
 
 
 .our-works__carousel {
-    width: 245%;
+    width: 176%;
     top: 3.5%;
-    left: -72.5%;
+    left: -38%;
     height: 82%;
 }
 
@@ -332,7 +332,7 @@ input {
 }
 
 .carousel__item {
-    /* width: 50%; */
+    /* width: 200%; */
     height: 100%;
     background: yellow;
     border-radius: 5px;
@@ -344,8 +344,11 @@ input {
 
 .mac {
     position: relative;
-    overflow: hidden;
-    
+    overflow: hidden; 
+}
+
+.mac img {
+    width: 70%;
 }
 
 .slick-slide {
@@ -409,11 +412,11 @@ input {
 
 
 
-/* xl-размер (>=1200px) */
-@media (min-width: 1200px) {
+
+@media (max-width: 1300px) {
     .our-works__carousel {
-        width: 227%;
-        left: -63.5%;
+        width: 180%;
+        left: -40%;
     }
 }
 /* CSS для >=1200px */
@@ -422,10 +425,7 @@ input {
 @media (max-width: 1199px) {
   /* CSS для ширины от 992px до 1199px */
 
-    .our-works__carousel {
-        width: 255%;
-        left: -77.5%;
-    }
+    
 }
  
 /* md-размер (<=991px) */
@@ -445,8 +445,8 @@ input {
         height: 60%;
     } 
     .our-works__carousel {
-        width: 260%;
-        left: -80%;
+        width: 186%;
+        left: -43.1%;
     }
 
 }
@@ -491,20 +491,22 @@ input {
         line-height: 2.6rem;
     } 
     .our-works__carousel {
-        width: 270%;
-        left: -85%;
+        width: 239%;
+        left: -69.7%;
     }
+    .mac img {
+        width: 90%;
+    }
+    
 }
+
+
  
-/* xs-размер (<=575px) */
-@media (max-width: 575px) {
-  /* CSS для ширины до 575px (включительно) */
+
+@media (max-width: 590px) {
+  /* CSS для ширины до 590px (включительно) */
     .head span {font-size: 34px;}
     .head { background-size:  110% auto; }
-    .our-works__carousel {
-        width: 280%;
-        left: -90%;
-    }
     .contact-us__text {
         left: 5px;
     }
@@ -515,14 +517,48 @@ input {
         font-size: 14px;
         line-height: 24px;
     }
+    .our-works__carousel {
+        width: 238%;
+        left: -69%;
+    }
+    .slick-slide {
+        margin: 0 7px;
+    }
+}
+
+@media (max-width: 490px) {
+    /* CSS для ширины до 490px (включительно) */
+    
+    .our-works__carousel {
+        left: -69.4%;
+    }
+    .slick-slide {
+        margin: 0 4px;
+    }
 }
 
 @media (max-width: 420px) {
     /* CSS для ширины до 420px (включительно) */
-      .our-works__carousel {
-          width: 296%;
-          left: -98%;
-      }
+    
+    .our-works__carousel {
+        width: 265%;
+        left: -82.7%;
+    }
+    .mac img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 370px) {
+    /* CSS для ширины до 420px (включительно) */
+    
+    .our-works__carousel {
+        width: 272%;
+        left: -86.4%;
+    }
+    .slick-slide {
+        margin: 0 3px;
+    }
 }
 
 
