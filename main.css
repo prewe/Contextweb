@@ -352,6 +352,10 @@ input {
 
 /* MEDIA */
 
+@media (max-width: 1650px) {
+    .head { background-size:  60% auto; }
+    .head3 { background-size:  80% auto; }
+}
 
 @media (max-width: 1300px) {
     .our-works__carousel {
