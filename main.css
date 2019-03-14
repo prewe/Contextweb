@@ -82,88 +82,6 @@ input {
     transition: 1s;
 }
 
-/*.mobile-menu__burger span {
-    height: 2px;
-    width: 30px;
-    background: white;
-    z-index: 100;
-    position: absolute;
-    top: 50%;
-    left: 30%;
-    -webkit-transition: 1s background-color, 1s -webkit-transform;
-    transition: 1s background-color, 1s -webkit-transform;
-    transition: 1s transform, 1s background-color;
-    transition: 1s transform, 1s background-color, 1s -webkit-transform;
-    -webkit-transition: 1s transform, 1s background-color;
-    -moz-transition: 1s transform, 1s background-color;
-    -ms-transition: 1s transform, 1s background-color;
-    -o-transition: 1s transform, 1s background-color;
-}
-.mobile-menu__burger span::before,
-.mobile-menu__burger span::after {
-    content: '';
-    height: 2px;
-    width: 30px;
-    background: white;
-    z-index: 100;
-    position: absolute;
-    -webkit-transition: 1s background-color, 1s -webkit-transform;
-    transition: 1s background-color, 1s -webkit-transform;
-    transition: 1s transform, 1s background-color;
-    transition: 1s transform, 1s background-color, 1s -webkit-transform;
-}
-  
-.mobile-menu__burger span::before {
-    transform: translateY(8px);
-    -webkit-transform: translateY(8px);
-    -moz-transform: translateY(8px);
-    -ms-transform: translateY(8px);
-    -o-transform: translateY(8px);
-}
-.mobile-menu__burger span::after {
-    transform: translateY(-8px);
-    -webkit-transform: translateY(-8px);
-    -moz-transform: translateY(-8px);
-    -ms-transform: translateY(-8px);
-    -o-transform: translateY(-8px);
-}
-
-#check-menu:checked ~ .mobile-menu__burger span {
-    background-color: transparent;
-    transform: rotate(135deg)  ;
-    -webkit-transform: rotate(135deg)  ;
-    -moz-transform: rotate(135deg)  ;
-    -ms-transform: rotate(135deg)  ;
-    -o-transform: rotate(135deg)  ;
-}
-#check-menu:checked ~ .mobile-menu__burger span::before,
-#check-menu:checked ~ .mobile-menu__burger span::after {
-    -webkit-transition: 0.5s -webkit-transform;
-    transition: 0.5s -webkit-transform;
-    transition: 0.5s transform;
-    transition: 0.5s transform, 0.5s -webkit-transform;
-    -webkit-transition: 0.5s transform;
-    -moz-transition: 0.5s transform;
-    -ms-transition: 0.5s transform;
-    -o-transition: 0.5s transform;
-}
- #check-menu:checked ~ .mobile-menu__burger span::before {
-    top: 0;
-    transform: translateY(0);
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-}
-#check-menu:checked ~ .mobile-menu__burger span::after {
-    top: 0;
-    transform: translateY(0) rotate(90deg);
-    -webkit-transform: translateY(0) rotate(90deg);
-    -moz-transform: translateY(0) rotate(90deg);
-    -ms-transform: translateY(0) rotate(90deg);
-    -o-transform: translateY(0) rotate(90deg);
-} */
-
 .mobile-menu__block {
     width: 100%;
     height: 300px;
@@ -201,7 +119,7 @@ input {
 .header {
     position: relative;
     width: 100%;
-    height: 550px;
+    height: 400px;
     z-index: 10;
 }
 
@@ -241,17 +159,19 @@ input {
 
 .head1 {    
     background: #7B15AD url('img/up/internet_add.png') no-repeat 80%; 
+    background-size:  40% auto;
 }
-
-
 .head2 {
     background: #F56B57 url('img/up/seo.png') no-repeat 80%;
+    background-size:  40% auto;
 }
 .head3 {
     background: #FFCC00 url('img/up/sites.png') no-repeat 80%;
+    background-size:  40% auto;
 }
 .head4 {
     background: #67C3E1 url('img/up/design.png') no-repeat 80%;
+    background-size:  40% auto;
 }
 
 
@@ -337,10 +257,6 @@ input {
     -webkit-text-fill-color: transparent;
 }
 
-
-
-
-
 .our-works__carousel {
     width: 176%;
     top: 3.5%;
@@ -356,7 +272,6 @@ input {
 }
 
 .carousel__item {
-    /* width: 200%; */
     height: 100%;
     background: yellow;
     border-radius: 5px;
@@ -369,6 +284,7 @@ input {
 .mac {
     position: relative;
     overflow: hidden; 
+    max-width: 1600px;
 }
 
 .mac img {
@@ -434,7 +350,7 @@ input {
 
 
 
-
+/* MEDIA */
 
 
 @media (max-width: 1300px) {
@@ -443,18 +359,8 @@ input {
         left: -40%;
     }
 }
-/* CSS для >=1200px */
-     
-/* lg-размер (<=1199px) */
-@media (max-width: 1199px) {
-  /* CSS для ширины от 992px до 1199px */
-
-    
-}
  
-/* md-размер (<=991px) */
 @media (max-width: 991px) {
-  /* CSS для ширины от 768px до 991px */
     .header {height: 350px;}
     .head1 { -webkit-animation-name: fadeImg-1; animation-name: fadeImg-1; }
     .head2 { -webkit-animation-name: fadeImg-2; animation-name: fadeImg-2; }
@@ -475,9 +381,7 @@ input {
 
 }
  
-/* sm-размер (<=768px) */
 @media (max-width: 767px) { 
-  /* CSS для ширины от 576px до 767px */
     .head { background-size:  80% auto; }
     .head2 { background-size:  70% auto; }
     .head1 span {
@@ -494,7 +398,6 @@ input {
         line-height: 2.6rem;        
     }
      
-
     .head2 p { 
         position: absolute;
         top: 315px;
@@ -514,10 +417,12 @@ input {
         color: #67C3E1;
         line-height: 2.6rem;
     } 
+
     .our-works__carousel {
         width: 239%;
         left: -69.7%;
     }
+
     .mac img {
         width: 90%;
     }
@@ -528,7 +433,6 @@ input {
  
 
 @media (max-width: 590px) {
-  /* CSS для ширины до 590px (включительно) */
     .head span {font-size: 34px;}
     .head { background-size:  110% auto; }
     .contact-us__text {
@@ -550,9 +454,7 @@ input {
     }
 }
 
-@media (max-width: 490px) {
-    /* CSS для ширины до 490px (включительно) */
-    
+@media (max-width: 490px) { 
     .our-works__carousel {
         left: -69.4%;
     }
@@ -561,9 +463,7 @@ input {
     }
 }
 
-@media (max-width: 420px) {
-    /* CSS для ширины до 420px (включительно) */
-    
+@media (max-width: 420px) {   
     .our-works__carousel {
         width: 265%;
         left: -82.7%;
@@ -574,8 +474,6 @@ input {
 }
 
 @media (max-width: 370px) {
-    /* CSS для ширины до 420px (включительно) */
-    
     .our-works__carousel {
         width: 272%;
         left: -86.2%;
